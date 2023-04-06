@@ -7,6 +7,7 @@ package deliverable1;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.*;
 
 /**
  * A concrete class that represents any grouping of cards for a Game. HINT, you might want to subclass this more than
@@ -18,8 +19,12 @@ import java.util.Collections;
 public class GroupOfCards {
 
     //The group of cards, stored in an ArrayList
-    private ArrayList<Card> cards;
-    private int size;//the size of the grouping
+    private ArrayList<deliverable1.Card> attribute;
+    private int size;
+    /**
+     * The group of cards, stored in an ArrayList
+     */
+    private Collection<deliverable1.Card> cards;//the size of the grouping
 
     public GroupOfCards(int size) {
         this.size = size;
@@ -30,8 +35,8 @@ public class GroupOfCards {
      *
      * @return the group of cards.
      */
-    public ArrayList<Card> getCards() {
-        return cards;
+    public ArrayList<deliverable1.Card> getAttribute() {
+        return attribute;
     }
 
     public void shuffle() {
@@ -50,6 +55,10 @@ public class GroupOfCards {
      */
     public void setSize(int size) {
         this.size = size;
+    }
+
+    public Collection<deliverable1.Card> getCards() {
+        return this.cards;
     }
 
 }//end class
