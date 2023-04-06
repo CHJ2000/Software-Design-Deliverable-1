@@ -6,8 +6,6 @@
 package deliverable1;
 
 import java.util.ArrayList;
-import deliverable1.*;
-import java.util.*;
 
 /**
  * The class that models your game. You should create a more specific child of this class and instantiate the methods
@@ -19,11 +17,7 @@ import java.util.*;
 public abstract class Game {
 
     private final String name;//the title of the game
-    private ArrayList<deliverable1.Player> attribute;
-    /**
-     * the title of the game
-     */
-    private Collection<deliverable1.Player> players;// the players of the game
+    private ArrayList<Player> players;// the players of the game
 
     public Game(String name) {
         this.name = name;
@@ -40,15 +34,15 @@ public abstract class Game {
     /**
      * @return the players of this game
      */
-    public ArrayList<deliverable1.Player> getAttribute() {
-        return attribute;
+    public ArrayList<Player> getPlayers() {
+        return players;
     }
 
     /**
      * @param players the players of this game
      */
-    public void setAttribute(ArrayList<deliverable1.Player> players) {
-        this.attribute = players;
+    public void setPlayers(ArrayList<Player> players) {
+        this.players = players;
     }
 
     /**
@@ -60,13 +54,5 @@ public abstract class Game {
      * When the game is over, use this method to declare and display a winning player.
      */
     public abstract void declareWinner();
-
-    public Collection<deliverable1.Player> getPlayers() {
-        return this.players;
-    }
-
-    public void setPlayers(Collection<deliverable1.Player> players) {
-        this.players = players;
-    }
 
 }//end class
