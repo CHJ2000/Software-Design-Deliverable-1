@@ -22,4 +22,20 @@ public abstract class Card {
     @Override
     public abstract String toString();
 
+    public int getValue() {
+        return this.value;
+    }
+
+    public String getSuit() {
+        return this.suit;
+    }
+
+    public Card generateRandomCard() {
+        // TODO - implement Card.generateRandomCard
+        throw new UnsupportedOperationException();
+    }
+
+    private int value;
+    private String suit;
+
 }

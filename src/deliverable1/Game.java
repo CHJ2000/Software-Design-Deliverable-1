@@ -16,10 +16,14 @@ import java.util.ArrayList;
  */
 public abstract class Game {
 
-    private final String name;//the title of the game
-    private ArrayList<Player> players;// the players of the game
+    private String name = null;
+    private GroupOfCards middlePile;
+    private int cardsInMiddle;/**
+     * the players of the game
+     * @param name
+     */
 
-    public Game(String name) {
+    public Player registerPlayer(String name) {
         this.name = name;
         players = new ArrayList();
     }
@@ -48,11 +52,16 @@ public abstract class Game {
     /**
      * Play the game. This might be one method or many method calls depending on your game.
      */
-    public abstract void play();
+    public abstract void startGame();
 
     /**
      * When the game is over, use this method to declare and display a winning player.
      */
-    public abstract void declareWinner();
+    public abstract void playGame();
+
+    public void endGame() {
+        // TODO - implement Game.endGame
+        throw new UnsupportedOperationException();
+    }
 
 }//end class

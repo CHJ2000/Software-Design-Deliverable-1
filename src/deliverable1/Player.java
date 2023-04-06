@@ -13,16 +13,10 @@ package deliverable1;
  */
 public abstract class Player {
 
-    private String name; //the unique name for this player
-
-    /**
-     * A constructor that allows you to set the player's unique ID
-     *
-     * @param name the unique ID to assign to this player.
-     */
-    public Player(String name) {
-        this.name = name;
-    }
+    private String name;
+    private int id;
+    private int score;
+    private GroupOfCards hand;
 
     /**
      * @return the player name
@@ -45,5 +39,56 @@ public abstract class Player {
      * with logic to play your game.
      */
     public abstract void play();
+
+    public int getId() {
+        return this.id;
+    }
+
+    public int getScore() {
+        return this.score;
+    }
+
+    public GroupOfCards getHand() {
+        return this.hand;
+    }
+
+    /**
+     * 
+     * @param id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * 
+     * @param score
+     */
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    /**
+     * 
+     * @param hand
+     */
+    public void setHand(GroupOfCards hand) {
+        this.hand = hand;
+    }
+
+    public void showHand() {
+        // TODO - implement Player.showHand
+        throw new UnsupportedOperationException();
+    }
+
+    public void leaveGame() {
+        // TODO - implement Player.leaveGame
+        throw new UnsupportedOperationException();
+    }
+
+    public List[int] getScoreHistory() {
+        // TODO - implement Player.getScoreHistory
+        throw new UnsupportedOperationException();
+    }
 
 }

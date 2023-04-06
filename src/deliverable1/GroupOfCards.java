@@ -19,11 +19,6 @@ public class GroupOfCards {
 
     //The group of cards, stored in an ArrayList
     private ArrayList<Card> cards;
-    private int size;//the size of the grouping
-
-    public GroupOfCards(int size) {
-        this.size = size;
-    }
 
     /**
      * A method that will get the group of cards as an ArrayList
@@ -39,17 +34,40 @@ public class GroupOfCards {
     }
 
     /**
-     * @return the size of the group of cards
+     * 
+     * @param card
      */
-    public int getSize() {
-        return size;
+    public void addCard(Card card) {
+        // TODO - implement GroupOfCards.addCard
+        throw new UnsupportedOperationException();
     }
 
     /**
-     * @param size the max size for the group of cards
+     * 
+     * @param index
      */
-    public void setSize(int size) {
-        this.size = size;
+    public Card removeCard(int index) {
+        // TODO - implement GroupOfCards.removeCard
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * 
+     * @param index
+     */
+    public Card getCard(int index) {
+        // TODO - implement GroupOfCards.getCard
+        throw new UnsupportedOperationException();
+    }
+
+    public int getNumOfCards() {
+        // TODO - implement GroupOfCards.getNumOfCards
+        throw new UnsupportedOperationException();
+    }
+
+    public void clear() {
+        // TODO - implement GroupOfCards.clear
+        throw new UnsupportedOperationException();
     }
 
 }//end class
