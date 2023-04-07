@@ -6,6 +6,7 @@
 package deliverable1;
 
 import java.util.ArrayList;
+import java.util.*;
 
 /**
  * The class that models your game. You should create a more specific child of this class and instantiate the methods
@@ -18,7 +19,11 @@ public abstract class Game {
 
     private String name = null;
     private GroupOfCards middlePile;
-    private int cardsInMiddle;/**
+    private int cardsInMiddle;
+    /**
+     * the title of the game
+     */
+    private Collection<ArrayList<Player>> players;/**
      * the players of the game
      * @param name
      */
@@ -61,6 +66,37 @@ public abstract class Game {
 
     public void endGame() {
         // TODO - implement Game.endGame
+        throw new UnsupportedOperationException();
+    }
+
+    public Collection<ArrayList<Player>> getPlayers() {
+        return this.players;
+    }
+
+    public void setPlayers(Collection<ArrayList<Player>> players) {
+        this.players = players;
+    }
+
+    /**
+     * 
+     * @param input
+     */
+    private boolean isValidInput(String input) {
+        // TODO - implement Game.isValidInput
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * 
+     * @param input
+     */
+    private int[] parseInput(String input) {
+        // TODO - implement Game.parseInput
+        throw new UnsupportedOperationException();
+    }
+
+    public Game() {
+        // TODO - implement Game.Game
         throw new UnsupportedOperationException();
     }
 

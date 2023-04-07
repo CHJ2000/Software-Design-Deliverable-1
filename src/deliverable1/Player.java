@@ -16,7 +16,7 @@ public abstract class Player {
     private String name;
     private int id;
     private int score;
-    private GroupOfCards hand;
+    private ArrayList<Card> hand;
 
     /**
      * @return the player name
@@ -48,7 +48,7 @@ public abstract class Player {
         return this.score;
     }
 
-    public GroupOfCards getHand() {
+    public ArrayList<Card> getHand() {
         return this.hand;
     }
 
@@ -72,7 +72,7 @@ public abstract class Player {
      * 
      * @param hand
      */
-    public void setHand(GroupOfCards hand) {
+    public void setHand(ArrayList<Card> hand) {
         this.hand = hand;
     }
 
@@ -86,8 +86,38 @@ public abstract class Player {
         throw new UnsupportedOperationException();
     }
 
-    public List[int] getScoreHistory() {
+    public List<Integer> getScoreHistory() {
         // TODO - implement Player.getScoreHistory
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public Player(String name) {
+        // TODO - implement Player.Player
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * 
+     * @param suit
+     * @param value
+     */
+    private void requestCard(String suit, int value) {
+        // TODO - implement Player.requestCard
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * 
+     * @param playerId
+     * @param suit
+     * @param value
+     */
+    private void giveCard(int playerId, String suit, int value) {
+        // TODO - implement Player.giveCard
         throw new UnsupportedOperationException();
     }
 

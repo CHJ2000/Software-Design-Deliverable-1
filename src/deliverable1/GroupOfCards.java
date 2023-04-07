@@ -70,4 +70,9 @@ public class GroupOfCards {
         throw new UnsupportedOperationException();
     }
 
+    public GroupOfCards() {
+        // TODO - implement GroupOfCards.GroupOfCards
+        throw new UnsupportedOperationException();
+    }
+
 }//end class
