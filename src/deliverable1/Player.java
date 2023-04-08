@@ -13,10 +13,11 @@ package deliverable1;
  */
 public abstract class Player {
 
-    private String name;
+    public String name;
     private int id;
     private int score;
     private ArrayList<Card> hand;
+    private int userId;
 
     /**
      * @return the player name
@@ -94,8 +95,9 @@ public abstract class Player {
     /**
      * 
      * @param name
+     * @param userId
      */
-    public Player(String name) {
+    public Player(String name, int userId) {
         // TODO - implement Player.Player
         throw new UnsupportedOperationException();
     }
@@ -119,6 +121,10 @@ public abstract class Player {
     private void giveCard(int playerId, String suit, int value) {
         // TODO - implement Player.giveCard
         throw new UnsupportedOperationException();
+    }
+
+    public int getUserId() {
+        return this.userId;
     }
 
 }
